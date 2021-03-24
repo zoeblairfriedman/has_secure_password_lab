@@ -10,7 +10,7 @@ def create
         session[:user_id] = @user.id 
         redirect_to "users/home"
     else
-        redirect_to "users/new"
+        redirect_to "/signup"
     end
 end
 
