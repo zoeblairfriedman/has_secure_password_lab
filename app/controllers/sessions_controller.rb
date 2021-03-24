@@ -9,7 +9,7 @@ def create
     if @user && @user.authenticate(params[:user][:password])
         session[:user_id] = @user.id
     else
-        redirect_to "/signup"
+        redirect_to "users/new"
     end
 end
 
